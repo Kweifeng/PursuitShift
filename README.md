@@ -16,7 +16,7 @@ git clone https://github.com/Kweifeng/PursuitShift.git
 cd stnet
 pip install .
 
-Requirements
+# Requirements
 
 Python >= 3.7
 PyTorch >= 2.0.4
@@ -27,26 +27,6 @@ import torch
 from stnet.model import ImprovedSTNet
 from stnet.utils import get_device
 
-# Initialize model
-device = get_device()
-model = ImprovedSTNet(input_size=9, num_classes=3).to(device)
-
-# Example input: batch_size=16, seq_len=12, input_size=9
-x = torch.randn(16, 12, 9).to(device)
-
-# Forward pass
-cls_pred, reg_pred = model(x)
-print(cls_pred.shape)  # [16, 3]
-print(reg_pred.shape)  # [16, 2]
-
-See examples/example_usage.py for a complete example.
-Modules
-
-SpatioTemporalAttention: Self-attention mechanism for capturing relationships across time steps.
-ImprovedSTNet: Main model combining temporal, GRU, attention, and convolutional layers.
-DynamicWeightedLoss: Custom loss function for combined classification and regression tasks.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+# License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
