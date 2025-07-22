@@ -19,7 +19,7 @@ pip install .
 Requirements
 
 Python >= 3.7
-PyTorch >= 1.9.0
+PyTorch >= 2.0.4
 
 See requirements.txt for details.
 Usage
