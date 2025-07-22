@@ -13,8 +13,6 @@ pip install stnet
 
 Or install from source:
 git clone https://github.com/Kweifeng/PursuitShift.git
-cd stnet
-pip install .
 
 # Requirements
 
